@@ -7,11 +7,10 @@ import { GeneralComponent } from './general/general.component';
 
 
 const routes: Routes = [
-  {path: '', component: DashboardComponent},
-  {path: 'product', component: ProductComponent},
-  {path: 'order', component: OrderComponent},
-  {path: 'general', component: GeneralComponent},
-  {path: '**', redirectTo: ''}
+  { path: '', component: DashboardComponent },
+  { path: 'product', component: ProductComponent },
+  { path: 'order', component: OrderComponent },
+  { path: 'general', component: GeneralComponent }
 ];
 
 @NgModule({
