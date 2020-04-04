@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+interface User {
+  username: string
+  password: string
+}
+
 @Component({
   selector: 'app-signin',
   templateUrl: './signin.component.html',
@@ -7,9 +12,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SigninComponent implements OnInit {
 
+  user: User = {
+    username: "",
+    password: ""
+  }
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  login() {
+    console.log(this.user)
+  }
 }

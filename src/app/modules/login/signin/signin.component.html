@@ -1,1 +1,17 @@
-<p>signin works!</p>
+<form #loginForm="ngForm" (ngSubmit)="login()">
+  <div>
+    <label for="username">用户名</label>
+    <input id="username" type="text" pInputText placeholder="请输入用户名" name="username" required
+      [(ngModel)]="user.username" />
+  </div>
+
+  <div>
+    <label for="password">密码</label>
+    <input id="password" type="password" pInputText placeholder="请输入密码" name="password" required
+      [(ngModel)]="user.password" />
+  </div>
+
+  <div>
+    <button pButton type="submit" [disabled]="!loginForm.form.valid" label="登录"></button>
+  </div>
+</form>

@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
+import { InputTextModule } from 'primeng/inputtext';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,8 +13,10 @@ import { TableModule } from 'primeng/table';
     CommonModule
   ],
   exports: [
+    FormsModule,
     ButtonModule,
-    TableModule
+    TableModule,
+    InputTextModule
   ]
 })
 export class SharedModule { }
