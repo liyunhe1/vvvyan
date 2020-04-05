@@ -1,27 +1,27 @@
 # Vvvyan
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+基于 Angular 的微燕商城 1.0 https://vvvyan.website
 
-## Development server
+原版（Vue）：https://github.com/jikeytang/vyan-shop-admin/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 简介
 
-## Code scaffolding
+### 本站内容
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+使用 Angular 对 Vue 版本的微燕商城进行重写
 
-## Build
+### 技术栈
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+基于 [Angular 9.x](https://angular.cn/) 和 [PrimeNG](https://primefaces.org/primeng/) 开发
 
-## Running unit tests
+### 部署
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+使用 [Zeit](https://zeit.co/) ，构建、部署、自定义域名一站式服务。支持 History Mode，国内访问速度较快。
 
-## Running end-to-end tests
+## TODO
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+移植基本功能
 
-## Further help
+## License
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+MIT
