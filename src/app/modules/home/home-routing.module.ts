@@ -4,13 +4,19 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductComponent } from './product/product.component';
 import { OrderComponent } from './order/order.component';
 import { GeneralComponent } from './general/general.component';
+import { LayoutComponent } from './layout.component';
 
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
-  { path: 'product', component: ProductComponent },
-  { path: 'order', component: OrderComponent },
-  { path: 'general', component: GeneralComponent }
+  {
+    path: '', component: LayoutComponent, children: [
+      { path: '', component: DashboardComponent },
+      { path: 'product', component: ProductComponent },
+      { path: 'order', component: OrderComponent },
+      { path: 'general', component: GeneralComponent }
+    ]
+  }
+
 ];
 
 @NgModule({

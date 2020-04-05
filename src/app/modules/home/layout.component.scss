@@ -1,0 +1,55 @@
+.layout-topbar {
+  background-color: #fff;
+  display: block;
+  padding: 0;
+  height: 60px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9997;
+
+  display: flex;
+  align-items: center;
+}
+
+.layout-leftbar {
+  width: 180px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  float: left;
+  margin-top: 60px;
+  box-shadow: 2px 0 8px 0 rgba(29, 35, 41, .05);
+}
+
+.layout-content {
+  margin-left: 180px;
+  padding: 16px;
+}
+
+.title {
+  box-shadow: 2px 0 8px 0 rgba(29, 35, 41, .05);
+  display: flex;
+  width: 180px;
+  height: inherit;
+  align-items: center;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  width: inherit;
+  text-align: center;
+}
+
+.menu {
+  flex: 1;
+  margin: 0 16px;
+}
+
+:host ::ng-deep .ui-menubar {
+  border: none;
+}

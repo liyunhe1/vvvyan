@@ -13,8 +13,8 @@ interface User {
 export class SigninComponent implements OnInit {
 
   user: User = {
-    username: "",
-    password: ""
+    username: "admin",
+    password: "test"
   }
 
   constructor() { }

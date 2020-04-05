@@ -1,0 +1,15 @@
+<div class="layout-topbar">
+  <div class="title">
+    <h1>商城管理系统</h1>
+  </div>
+  <p-menubar class="menu" [model]="items">
+    <div>
+      <p-menu #menu [popup]="true" [model]="userItems"></p-menu>
+      <button type="button" pButton icon="pi pi-user" label="user" (click)="menu.toggle($event)"></button>
+    </div>
+  </p-menubar>
+</div>
+<div class="layout-leftbar"></div>
+<div class="layout-content">
+  <router-outlet></router-outlet>
+</div>

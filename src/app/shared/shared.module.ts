@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
 import { InputTextModule } from 'primeng/inputtext';
-import { FormsModule } from '@angular/forms';
+import { MenuModule } from 'primeng/menu';
+import { MenubarModule } from 'primeng/menubar';
+
+
 
 
 @NgModule({
@@ -16,7 +20,9 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     ButtonModule,
     TableModule,
-    InputTextModule
+    InputTextModule,
+    MenuModule,
+    MenubarModule
   ]
 })
 export class SharedModule { }
